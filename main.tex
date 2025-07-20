@@ -2,84 +2,203 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[italian]{babel}
 \usepackage{lmodern}
+\usepackage{graphicx}
 
-% Use Unipd as theme, with options:
-% - pageofpages: define the separation symbol of the footer page of pages (e.g.: of, di, /, default: of)
-% - logo: position another logo near the Unipd logo in the title page (e.g. department logo), passing the second logo path as option 
-% Use the environment lastframe to add the endframe text
-\usetheme[pageofpages=of]{Unipd}
+\usetheme[pageofpages=di]{Unipd}
 
-\title{Presentations using the Unipd theme}
-\subtitle{Demonstrating how to use the Unipd theme}
-\author[Pippo, Pluto]{G.~Pippo \and P.~Pluto}
+\title{Sviluppo di un sistema web on-premise per la configurazione e il calcolo dei costi di pannelli per l’automazione di valvole industriali}
+\subtitle{Esperienza di stage presso Nuvem s.r.l. in collaborazione con Starline Services S.p.A.}
+\author[Enrico Cotti Cottini]{Enrico Cotti Cottini}
+\date{Luglio 22, 2025}
+\institute{Dipartimento di Matematica “Tullio Levi-Civita”\\Corso di Laurea in Informatica\\Università degli Studi di Padova}
 
-\date{April 20, 2000}
-
-% The next block of commands puts the table of contents at the beginning of each section and highlights the current section
-\AtBeginSection[]
-{
-  \begin{frame}
-    \frametitle{Table of Contents}
-    \tableofcontents[currentsection]
-  \end{frame}
-}
-
-
+% \AtBeginSection[]
+% {
+%   \begin{frame}
+%     \frametitle{Indice}
+%     \tableofcontents[currentsection]
+%   \end{frame}
+% }
 
 \begin{document}
 
-% Make the title page
 \frame{\titlepage}
 
-% Insert the general toc
-\begin{frame}{Table of Contents}
+\begin{frame}{Indice}
     \tableofcontents    
 \end{frame}
 
-\section{First section}
+% % 2. Azienda ospitante: Nuvem s.r.l.
+% \section{Azienda ospitante}
+% \begin{frame}{Nuvem s.r.l. - Azienda ospitante}
+%     \begin{itemize}
+%         \item \textbf{Consulenza IT} e sviluppo software
+%         \item \textbf{Innovazione} nei processi aziendali
+%         \item \textbf{Ambiente formativo} per lo stage
+%         \item \textbf{Team multidisciplinare}
+%     \end{itemize}
+%     %\includegraphics[width=0.35\textwidth]{nuvem_logo.png}
+% \end{frame}
 
-    \begin{frame}{First section}
-        In this slide, some important text will be
-        \alert{highlighted} because it's important.
-        Here an ordered list:
-        \begin{enumerate}
-            \item First item
-            \item Second item
-        \end{enumerate}
-        Here an unordered list: 
-        \begin{itemize}
-            \item One item
-            \item Another item
-        \end{itemize}
-    \end{frame}
-    
-\section{Second section}
+% 3. Azienda cliente: Starline Services S.p.A.
+\section{Azienda cliente}
+\begin{frame}{Starline Services S.p.A. - Azienda cliente}
+    \begin{itemize}
+        \item \textbf{Specializzazione}: valvole a sfera e automazione industriale
+        \item \textbf{Innovazione} e qualità certificata
+        \item \textbf{Richiesta} di digitalizzazione processo
+        \item \textbf{Collaborazione} con Nuvem
+    \end{itemize}
+    %\includegraphics[width=0.35\textwidth]{starline_logo.png}
+\end{frame}
 
-    \begin{frame}{Second section}
-        \begin{block}{Block}
-            Sample text in a normal block
-        \end{block}
-   
-        \begin{alertblock}{Alert block}
-            Sample text in an alert block
-        \end{alertblock}    
-        
-         \begin{example}
-            Sample text for an example
-        \end{example}
-    \end{frame}
+% 4. Il sistema attuale: progettazione pannelli in Excel
+\section{Sistema attuale}
+\begin{frame}{Progettazione pannelli in Excel}
+    \begin{itemize}
+        \item \textbf{Gestione manuale} tramite fogli Excel
+        \item \textbf{Criticità}: errori, lentezza, poca tracciabilità
+        \item \textbf{Difficoltà} nella gestione dei componenti
+        \item \textbf{Necessità} di miglioramento
+    \end{itemize}
+    % \includegraphics[width=0.5\textwidth]{excel_componenti.png} % Sostituisci con l'immagine reale
+\end{frame}
 
-    
-    \begin{emptyframe}
-        Thank you!
-    \end{emptyframe}
+% 5. Contesto applicativo: valvola e attuatore
+\section{Contesto applicativo}
+\begin{frame}{Valvola e attuatore}
+    \begin{itemize}
+        \item \textbf{Valvola a sfera}: controllo flusso
+        \item \textbf{Attuatore}: apertura/chiusura automatica
+        \item \textbf{Integrazione} nei sistemi industriali
+        \item \textbf{Applicazioni}: chimico, energia, oil\&gas
+    \end{itemize}
+    \includegraphics[width=0.22\textwidth]{images/Contesto_Applicativo/valvola_sfera.png} % Sostituisci con l'immagine reale
+    \hspace{0.5cm}
+    \includegraphics[width=0.22\textwidth]{images/Contesto_Applicativo/attuatore.jpg} % Sostituisci con l'immagine reale
+\end{frame}
 
-    \appendix
+% 6. Contesto applicativo: pannello di controllo
+\begin{frame}{Pannello di controllo}
+    \begin{itemize}
+        \item \textbf{Interfaccia} tra operatore e impianto
+        \item \textbf{Gestione} attuatori e valvole
+        \item \textbf{Personalizzazione} per esigenze cliente
+        \item \textbf{Elemento chiave} per automazione
+    \end{itemize}
+    \includegraphics[width=0.4\textwidth]{images/Contesto_Applicativo/pannello_controllo.jpg} % Sostituisci con l'immagine reale
+\end{frame}
 
-    \begin{frame}{Backup slide}
-        Some additional content
-    \end{frame}
-    
+% 7. Necessità della soluzione software
+\section{Motivazione}
+\begin{frame}{Necessità della soluzione software}
+    \begin{itemize}
+        \item \textbf{Complessità} crescente dei sistemi
+        \item \textbf{Limiti} strumenti tradizionali
+        \item \textbf{Rischio} di errore umano
+        \item \textbf{Centralizzazione} e automazione dati
+    \end{itemize}
+    %\includegraphics[width=0.5\textwidth]{diagramma_flusso.png}
+\end{frame}
+
+% 8. Descrizione dello stage
+\section{Stage}
+\begin{frame}{Descrizione dello stage}
+    \begin{itemize}
+        \item \textbf{Durata}: 6 mesi presso Nuvem/Starline
+        \item \textbf{Obiettivi}: sviluppo piattaforma, analisi requisiti
+        \item \textbf{Ruolo}: analisi, sviluppo, test
+        \item \textbf{Collaborazione} con team multidisciplinare
+    \end{itemize}
+\end{frame}
+
+% 9. Metodologia di sviluppo: Agile e Scrum
+\section{Metodologia}
+\begin{frame}{Metodologia di sviluppo: Agile e Scrum}
+    \begin{itemize}
+        \item \textbf{Principi} Agile: iterazione, feedback, adattamento
+        \item \textbf{Scrum}: ruoli, eventi, artefatti
+        \item \textbf{Gestione} del lavoro in team
+        \item \textbf{Miglioramento} continuo
+    \end{itemize}
+    %\includegraphics[width=0.4\textwidth]{scrum.png}
+\end{frame}
+
+% 10. Scrum applicato al progetto
+\begin{frame}{Scrum applicato al progetto}
+    \begin{itemize}
+        \item \textbf{Adattamento} Scrum al contesto aziendale
+        \item \textbf{Strumenti}: GitHub, Teams, Docker
+        \item \textbf{Sprint} e review regolari
+        \item \textbf{Board Kanban} per monitoraggio attività
+    \end{itemize}
+    %\includegraphics[width=0.4\textwidth]{kanban.png}
+\end{frame}
+
+% 11. Analisi dei requisiti
+\section{Analisi dei requisiti}
+\begin{frame}{Analisi dei requisiti}
+    \begin{itemize}
+        \item \textbf{Casi d’uso}: progetti, offerte, anagrafiche
+        \item \textbf{Requisiti} funzionali e qualitativi
+        \item \textbf{Vincoli} tecnici e di processo
+        \item \textbf{Tracciamento} tramite diagrammi
+    \end{itemize}
+    %\includegraphics[width=0.4\textwidth]{usecase.png}
+\end{frame}
+
+% 12. Progettazione: architettura esagonale
+\section{Progettazione}
+\begin{frame}{Architettura esagonale}
+    \begin{itemize}
+        \item \textbf{Separazione} tra dominio e infrastruttura
+        \item \textbf{Indipendenza} dai dettagli implementativi
+        \item \textbf{Facilità} di test e manutenzione
+        \item \textbf{Adattabilità} a cambiamenti futuri
+    \end{itemize}
+    \includegraphics[width=0.45\textwidth]{images/classes/hexagonal-architecture-pattern.png} % Sostituisci con lo schema reale
+\end{frame}
+
+% 13. Progettazione: dependency injection
+\begin{frame}{Dependency Injection}
+    \begin{itemize}
+        \item \textbf{Gestione automatica} delle dipendenze
+        \item \textbf{Modularità} e riusabilità del codice
+        \item \textbf{Facilita} il testing e il mocking
+        \item \textbf{Implementazione} tramite framework .NET
+    \end{itemize}
+    %\includegraphics[width=0.45\textwidth]{dependency_injection.png} % Schema o snippet di codice
+\end{frame}
+
+% 14. Progettazione e tecnologie
+\begin{frame}{Tecnologie e frontend}
+    \begin{itemize}
+        \item \textbf{MudBlazor}: interfaccia web moderna
+        \item \textbf{ASP.NET Core}: backend robusto
+        \item \textbf{MongoDB}: database NoSQL flessibile
+        \item \textbf{Docker}: containerizzazione e portabilità
+    \end{itemize}
+    %\includegraphics[width=0.45\textwidth]{frontend.png} % Screenshot UI o diagramma tecnico
+\end{frame}
+
+% 15. Conclusioni e prospettive
+\section{Conclusioni}
+\begin{frame}{Conclusioni e prospettive}
+    \begin{itemize}
+        \item \textbf{Obiettivi raggiunti} e funzionalità implementate
+        \item \textbf{Benefici}: efficienza, riduzione errori, scalabilità
+        \item \textbf{Sviluppi futuri}: completamento funzionalità, ottimizzazione UX
+        \item \textbf{Esperienza formativa} e crescita professionale
+    \end{itemize}
+    %\includegraphics[width=0.35\textwidth]{ringraziamenti.png}
+\end{frame}
+
+% Slide finale
+\begin{emptyframe}
+    \centering
+    \textbf{Grazie per l'attenzione!}
+\end{emptyframe}
+
 \end{document}
