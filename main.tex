@@ -26,9 +26,9 @@
 
 \frame{\titlepage}
 
-\begin{frame}{Indice}
-    \tableofcontents    
-\end{frame}
+% \begin{frame}{Indice}
+    % \tableofcontents    
+% \end{frame}
 
 % % 2. Azienda ospitante: Nuvem s.r.l.
 % \section{Azienda ospitante}
@@ -44,12 +44,11 @@
 
 % 3. Azienda cliente: Starline Services S.p.A.
 \section{Azienda cliente}
-\begin{frame}{Starline Services S.p.A. - Azienda cliente}
+\begin{frame}{Starline S.p.A. - Azienda cliente}
     \begin{itemize}
         \item \textbf{Specializzazione}: valvole a sfera e automazione industriale
-        \item \textbf{Innovazione} e qualità certificata
-        \item \textbf{Richiesta} di digitalizzazione processo
-        \item \textbf{Collaborazione} con Nuvem
+        \item \textbf{Divisione Automation}: Starline Automation
+        \item \textbf{Focus}: realizzazione di soluzioni per automazione industriale
     \end{itemize}
     %\includegraphics[width=0.35\textwidth]{starline_logo.png}
 \end{frame}
@@ -59,11 +58,12 @@
 \begin{frame}{Progettazione pannelli in Excel}
     \begin{itemize}
         \item \textbf{Gestione manuale} tramite fogli Excel
-        \item \textbf{Criticità}: errori, lentezza, poca tracciabilità
-        \item \textbf{Difficoltà} nella gestione dei componenti
-        \item \textbf{Necessità} di miglioramento
+        \item \textbf{Criticità}: errori, lentezza, concorrenza
+        \item \textbf{Necessità}: di un sistema centralizzato
     \end{itemize}
-    % \includegraphics[width=0.5\textwidth]{excel_componenti.png} % Sostituisci con l'immagine reale
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{images/Informazioni prodotto industriale con errore.png} % Sostituisci con l'immagine reale
+    \end{center}
 \end{frame}
 
 % 5. Contesto applicativo: valvola e attuatore
@@ -72,12 +72,12 @@
     \begin{itemize}
         \item \textbf{Valvola a sfera}: controllo flusso
         \item \textbf{Attuatore}: apertura/chiusura automatica
-        \item \textbf{Integrazione} nei sistemi industriali
-        \item \textbf{Applicazioni}: chimico, energia, oil\&gas
     \end{itemize}
-    \includegraphics[width=0.22\textwidth]{images/Contesto_Applicativo/valvola_sfera.png} % Sostituisci con l'immagine reale
-    \hspace{0.5cm}
-    \includegraphics[width=0.22\textwidth]{images/Contesto_Applicativo/attuatore.jpg} % Sostituisci con l'immagine reale
+    \begin{center}
+        \includegraphics[width=0.45\textwidth]{images/Contesto_Applicativo/valvola_sfera.png}
+        \hspace{0.05\textwidth}
+        \includegraphics[width=0.45\textwidth]{images/Contesto_Applicativo/attuatore.jpg}
+    \end{center}
 \end{frame}
 
 % 6. Contesto applicativo: pannello di controllo
@@ -86,9 +86,10 @@
         \item \textbf{Interfaccia} tra operatore e impianto
         \item \textbf{Gestione} attuatori e valvole
         \item \textbf{Personalizzazione} per esigenze cliente
-        \item \textbf{Elemento chiave} per automazione
     \end{itemize}
-    \includegraphics[width=0.4\textwidth]{images/Contesto_Applicativo/pannello_controllo.jpg} % Sostituisci con l'immagine reale
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{images/Contesto_Applicativo/pannello_controllo.jpg} % Sostituisci con l'immagine reale
+    \end{center}
 \end{frame}
 
 % 7. Necessità della soluzione software
@@ -107,10 +108,10 @@
 \section{Stage}
 \begin{frame}{Descrizione dello stage}
     \begin{itemize}
-        \item \textbf{Durata}: 6 mesi presso Nuvem/Starline
+        \item \textbf{Durata}: 2 mesi presso Nuvem/Starline
         \item \textbf{Obiettivi}: sviluppo piattaforma, analisi requisiti
-        \item \textbf{Ruolo}: analisi, sviluppo, test
-        \item \textbf{Collaborazione} con team multidisciplinare
+        \item \textbf{Ruolo}: analisi, sviluppo
+        \item \textbf{Collaborazione} tra cliente e fornitore
     \end{itemize}
 \end{frame}
 
@@ -123,7 +124,9 @@
         \item \textbf{Gestione} del lavoro in team
         \item \textbf{Miglioramento} continuo
     \end{itemize}
-    %\includegraphics[width=0.4\textwidth]{scrum.png}
+    \begin{center}
+    \includegraphics[width=0.7\textwidth]{images/Scrum/scrum-process.jpg}
+    \end{center}
 \end{frame}
 
 % 10. Scrum applicato al progetto
@@ -132,7 +135,6 @@
         \item \textbf{Adattamento} Scrum al contesto aziendale
         \item \textbf{Strumenti}: GitHub, Teams, Docker
         \item \textbf{Sprint} e review regolari
-        \item \textbf{Board Kanban} per monitoraggio attività
     \end{itemize}
     %\includegraphics[width=0.4\textwidth]{kanban.png}
 \end{frame}
@@ -140,25 +142,31 @@
 % 11. Analisi dei requisiti
 \section{Analisi dei requisiti}
 \begin{frame}{Analisi dei requisiti}
-    \begin{itemize}
-        \item \textbf{Casi d’uso}: progetti, offerte, anagrafiche
-        \item \textbf{Requisiti} funzionali e qualitativi
-        \item \textbf{Vincoli} tecnici e di processo
-        \item \textbf{Tracciamento} tramite diagrammi
-    \end{itemize}
+    \begin{center}
+        \begin{minipage}{0.32\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{images/usecase/gestione_anagrafiche.png}\\
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.50\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{images/usecase/gestione_offerte.png}\\
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.50\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{images/usecase/gestione_progetti.png}\\
+        \end{minipage}
+    \end{center}
     %\includegraphics[width=0.4\textwidth]{usecase.png}
 \end{frame}
 
 % 12. Progettazione: architettura esagonale
 \section{Progettazione}
 \begin{frame}{Architettura esagonale}
-    \begin{itemize}
-        \item \textbf{Separazione} tra dominio e infrastruttura
-        \item \textbf{Indipendenza} dai dettagli implementativi
-        \item \textbf{Facilità} di test e manutenzione
-        \item \textbf{Adattabilità} a cambiamenti futuri
-    \end{itemize}
-    \includegraphics[width=0.45\textwidth]{images/classes/hexagonal-architecture-pattern.png} % Sostituisci con lo schema reale
+    \begin{center}
+    \includegraphics[width=0.8\textwidth]{images/classes/hexagonal-architecture-pattern.png} % Sostituisci con lo schema reale
+    \end{center}
 \end{frame}
 
 % 13. Progettazione: dependency injection
@@ -166,7 +174,6 @@
     \begin{itemize}
         \item \textbf{Gestione automatica} delle dipendenze
         \item \textbf{Modularità} e riusabilità del codice
-        \item \textbf{Facilita} il testing e il mocking
         \item \textbf{Implementazione} tramite framework .NET
     \end{itemize}
     %\includegraphics[width=0.45\textwidth]{dependency_injection.png} % Schema o snippet di codice
@@ -175,26 +182,27 @@
 % 14. Progettazione e tecnologie
 \begin{frame}{Tecnologie e frontend}
     \begin{itemize}
-        \item \textbf{MudBlazor}: interfaccia web moderna
-        \item \textbf{ASP.NET Core}: backend robusto
+        \item \textbf{MudBlazor}: interfaccia web moderna in Blazor
+        \item \textbf{Scalar}:  interfaccia interattiva per test API 
         \item \textbf{MongoDB}: database NoSQL flessibile
         \item \textbf{Docker}: containerizzazione e portabilità
+        \item \textbf{Rider}: IDE avanzato per lo sviluppo .NET
     \end{itemize}
     %\includegraphics[width=0.45\textwidth]{frontend.png} % Screenshot UI o diagramma tecnico
 \end{frame}
 
-% 15. Conclusioni e prospettive
-\section{Conclusioni}
+
 \begin{frame}{Conclusioni e prospettive}
     \begin{itemize}
-        \item \textbf{Obiettivi raggiunti} e funzionalità implementate
-        \item \textbf{Benefici}: efficienza, riduzione errori, scalabilità
-        \item \textbf{Sviluppi futuri}: completamento funzionalità, ottimizzazione UX
-        \item \textbf{Esperienza formativa} e crescita professionale
+        \item \textbf{Benefici ottenuti}: velocità, tracciabilità, riduzione degli errori
+        \item \textbf{Criticità}: alcune funzionalità avanzate ancora da completare
+        \item \textbf{Prospettive}: ottimizzazione Interfaccia, gestione ruoli, integrazione API
+        \item \textbf{Esperienza formativa} in contesto reale
     \end{itemize}
     %\includegraphics[width=0.35\textwidth]{ringraziamenti.png}
 \end{frame}
 
+ 
 % Slide finale
 \begin{emptyframe}
     \centering
